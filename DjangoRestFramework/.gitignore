@@ -1,0 +1,10 @@
+# Virtual Environment
+venv/
+
+# Python bytecode (pyc) and runtime-generated files
+__pycache__/
+*.pyc
+*.pyo
+
+# Media files (uploads)
+media/

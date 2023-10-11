@@ -2,7 +2,6 @@ import callApi from "../../apis/callApi.mjs";
 import Button from "./Button.mjs";
 import Vuex from "vuex"
 import { GET_LIST_MEMBER }  from '../../apis/graphql/query.mjs'
-
 const {mapGetters, mapActions} = Vuex
 
 const ListMember = {
@@ -15,6 +14,7 @@ const ListMember = {
                       <th class="border border-slate-600">User Name</th>
                       <th class="border border-slate-600">Contact Number</th>
                       <th class="border border-slate-600">Home Town</th>
+                      <th class="border border-slate-600">Link</th>
                     </tr>
                   </thead>
                   <tbody>

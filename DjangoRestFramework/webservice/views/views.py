@@ -77,7 +77,7 @@ def deleteMember(request):
 # Using Vue cdn
 
 def testCdn(request):
-    return render(request, 'app.html')
+    return render(request, 'main.html')
 
 
 def members(request):

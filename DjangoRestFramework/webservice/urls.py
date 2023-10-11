@@ -18,7 +18,7 @@ urlpatterns = [
     path('api/member/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
 
     # using vue router
-    path('', TemplateView.as_view(template_name='app.html')),
-    path('members', TemplateView.as_view(template_name='app.html')),
+    path('', TemplateView.as_view(template_name='main.html')),
+    path('members', TemplateView.as_view(template_name='main.html')),
 
 ]

@@ -1,29 +1,35 @@
-const Member = {
-    state: {
-        dataPage: {},
-        listMember: [],
-    },
+const state = () => ({
+    dataPage: {},
+    listMember: [],
+});
 
-    mutations: {
-        SET_LIST_MEMBER(state, payload) {
-            state.listMember = payload;
-        },
-    },
-
-    actions: {
-        async getListMember({commit}, payload) {
-            commit("SET_LIST_MEMBER", payload);
-        },
-    },
-
-    getters: {
-        listMember(state) {
-            return state.listMember;
-        },
-        getDataPage(state) {
-            return state.dataPage
-        }
+const mutations = {
+    SET_LIST_MEMBER(state, payload) {
+        state.listMember = payload;
     }
-}
+};
 
-export default Member;
+
+const actions = {
+    async getListMember({commit}, payload) {
+        commit("SET_LIST_MEMBER", payload);
+    }
+};
+
+const getters = {
+    listMember(state) {
+        return state.listMember;
+    }
+    ,
+    getDataPage(state) {
+        return state.dataPage
+    }
+};
+
+
+export default {
+    state,
+    getters,
+    actions,
+    mutations,
+};

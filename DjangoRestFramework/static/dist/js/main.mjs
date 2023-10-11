@@ -7,7 +7,6 @@ import ApolloProviders from "vue-apollo";
 
 const { ApolloProvider } = ApolloProviders;
 
-
 Vue.use(ApolloProvider);
 
 const apolloProvider = new ApolloProvider({

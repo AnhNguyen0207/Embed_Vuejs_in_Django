@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="color" @click="test">Click o day</button>
+    <sui-button primary class="color" @click="test">Click o day</sui-button>
   </div>
 </template>
 
